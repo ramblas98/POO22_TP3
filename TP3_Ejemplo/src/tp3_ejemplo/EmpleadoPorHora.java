@@ -13,9 +13,11 @@ public class EmpleadoPorHora extends Empleado {
     private double valor;
 
     public EmpleadoPorHora() {
+        System.out.println("Subclase Por Hora sin parametro.-");
     }
 
     public EmpleadoPorHora(int horas, double valor) {
+        System.out.println("Subclase Por Hora CON parametro.-");
         this.horas = horas;
         this.valor = valor;
     }
@@ -25,6 +27,7 @@ public class EmpleadoPorHora extends Empleado {
         super(nombre, dpto, puesto);
         this.horas = horas;
         this.valor = valor;
+        System.out.println("Subclase Por Hora y super CON parametros .-");
     }
 
     public int getHoras() {

@@ -12,9 +12,11 @@ public class EmpleadoAsalariado extends Empleado{
     private double sueldo;
 
     public EmpleadoAsalariado() {
+        System.out.println("Subclase Asalariado sin parametros.-");
     }
 
     public EmpleadoAsalariado(double sueldo) {
+        System.out.println("Subclase Asalariado CON parametro.-");
         this.sueldo = sueldo;
     }
 
@@ -22,6 +24,7 @@ public class EmpleadoAsalariado extends Empleado{
             String dpto, String puesto) {
         super(nombre, dpto, puesto);
         this.sueldo = sueldo;
+        System.out.println("Subclase Asalariado y super CON parametros .-");
     }
 
     public double getSueldo() {

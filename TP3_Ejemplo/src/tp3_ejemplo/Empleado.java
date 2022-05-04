@@ -15,12 +15,14 @@ public class Empleado {
     private String puesto;
 
     public Empleado() {
+        System.out.println("Clase padre sin parametros.-");
     }
 
     public Empleado(String nombre, String dpto, String puesto) {
         this.nombre = nombre;
         this.dpto = dpto;
         this.puesto = puesto;
+        System.out.println("Clase padre CON parametros.-");
     }
 
     public String getNombre() {

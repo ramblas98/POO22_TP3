@@ -22,7 +22,7 @@ public class Futbolista extends Integrante {
     }
 
     public Futbolista(String puesto, int peso, int edad, String nombre, String apellido) {
-       // super(edad, nombre, apellido);
+        super(edad, nombre, apellido);
         this.puesto = puesto;
         this.peso = peso;
     }

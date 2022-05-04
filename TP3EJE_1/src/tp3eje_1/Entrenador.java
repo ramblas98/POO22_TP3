@@ -24,7 +24,7 @@ public class Entrenador extends Integrante {
     }
 
     public Entrenador(int idfederacion, int edad, String nombre, String apellido) {
-        //super(edad, nombre, apellido);
+        super(edad, nombre, apellido);
         this.idfederacion = idfederacion;
     }
 

@@ -9,5 +9,20 @@ package tp3_ejemplo;
  * @author profeblas
  */
 public class EmpleadoAsalariado extends Empleado{
+    private double sueldo;
+
+    public EmpleadoAsalariado() {
+    }
+
+    public EmpleadoAsalariado(double sueldo) {
+        this.sueldo = sueldo;
+    }
+
+    public EmpleadoAsalariado(double sueldo, String nombre, String dpto, String puesto) {
+        super(nombre, dpto, puesto);
+        this.sueldo = sueldo;
+    }
+    
+    
     
 }

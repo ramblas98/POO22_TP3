@@ -20,7 +20,8 @@ public class EmpleadoPorHora extends Empleado {
         this.valor = valor;
     }
 
-    public EmpleadoPorHora(int horas, double valor, String nombre, String dpto, String puesto) {
+    public EmpleadoPorHora(int horas, double valor, String nombre, 
+            String dpto, String puesto) {
         super(nombre, dpto, puesto);
         this.horas = horas;
         this.valor = valor;
@@ -42,5 +43,5 @@ public class EmpleadoPorHora extends Empleado {
         this.valor = valor;
     }
     
-    
 }
+

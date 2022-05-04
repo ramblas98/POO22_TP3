@@ -8,6 +8,7 @@ package tp3_ejemplo;
  *
  * @author profeblas
  */
+
 public class Empleado {
     private String nombre;
     private String dpto;
@@ -46,6 +47,7 @@ public class Empleado {
         this.puesto = puesto;
     }
     
-    
-    
 }
+
+
+

@@ -18,11 +18,19 @@ public class EmpleadoAsalariado extends Empleado{
         this.sueldo = sueldo;
     }
 
-    public EmpleadoAsalariado(double sueldo, String nombre, String dpto, String puesto) {
+    public EmpleadoAsalariado(double sueldo, String nombre, 
+            String dpto, String puesto) {
         super(nombre, dpto, puesto);
         this.sueldo = sueldo;
     }
-    
-    
+
+    public double getSueldo() {
+        return sueldo;
+    }
+
+    public void setSueldo(double sueldo) {
+        this.sueldo = sueldo;
+    }
     
 }
+

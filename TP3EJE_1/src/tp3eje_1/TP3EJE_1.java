@@ -17,5 +17,8 @@ public class TP3EJE_1 {
     public static void main(String[] args) {
         // TODO code application logic here
     }
-    
+    Integrante l= new Integrante(49,"Juan ","Riquelme");
+    Futbolista a = new Futbolista("delantero",50,31,"Matias","Michelli");
+    Entrenador b= new Entrenador(4545,30,"matias","perez");
+    Masajista  c= new Masajista("titular",3,30,"Dario", "Ruiz");
 }

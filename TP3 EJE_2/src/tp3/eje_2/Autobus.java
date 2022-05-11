@@ -47,4 +47,40 @@ ju=this.getPrecioAsiento()*(float)0.50;
 no=this.getPrecioAsiento();
 return((ni* cantPaNin)+(no*cantipaNor)+(cantPaJu* ju));
 }
+
+    @Override
+    public String toString() {
+        return "Autobus{" + "cantAsiento=" + cantAsiento + ", precioAsiento=" + precioAsiento + '}';
+    }
+
+    @Override
+    public int hashCode() {
+        int hash = 7;
+        return hash;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final Autobus other = (Autobus) obj;
+        if (this.cantAsiento != other.cantAsiento) {
+            return false;
+        }
+        if (Float.floatToIntBits(this.precioAsiento) != Float.floatToIntBits(other.precioAsiento)) {
+            return false;
+        }
+        return true;
+    }
+
+
+
+
 }

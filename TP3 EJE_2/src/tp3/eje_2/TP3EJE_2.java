@@ -17,9 +17,32 @@ public class TP3EJE_2 {
     public static void main(String[] args) {
         // TODO code application logic here
     
-    Vehiculo a= new Vehiculo("hza 878","volvo");
+  //  Vehiculo a= new Vehiculo("hza 878","volvo");
     Camion   b= new Camion(10,160,"hfg 548","zuzuki");
     Autobus  c= new Autobus(65,150,"gtr 456","metalpar");
-    }
     
+    Camion  a= new Camion (5,20,"gtr 158","mercedes bensz");
+    Camion  d=new Camion(10,160,"hfg 548","zuzuki");
+    Autobus e= new Autobus(50,200,"gtr","buspark");
+    Autobus f=new Autobus(65,150,"gtr 456","metalpar");
+    if(a.equals(b))
+          System.out.println("True");
+         else
+        System.out.println("False");
+    
+    if(b.equals(d))
+           System.out.println("True");
+         else
+        System.out.println("False");
+   if (c.equals(f))
+     System.out.println("True");
+         else
+        System.out.println("False");
+    
+   
+    if(c.equals(e))
+          System.out.println("True");
+         else
+        System.out.println("False");
+        }
 }

@@ -5,6 +5,8 @@
  */
 package tp3.eje_2;
 
+import java.util.Objects;
+
 /**
  *
  * @author alumno
@@ -32,6 +34,38 @@ public class Vehiculo {
 
     public void setMarca(String marca) {
         this.marca = marca;
+    }
+
+    @Override
+    public String toString() {
+        return "Vehiculo{" + "patente=" + patente + ", marca=" + marca + '}';
+    }
+
+    @Override
+    public int hashCode() {
+        int hash = 7;
+        return hash;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final Vehiculo other = (Vehiculo) obj;
+        if (!Objects.equals(this.patente, other.patente)) {
+            return false;
+        }
+        if (!Objects.equals(this.marca, other.marca)) {
+            return false;
+        }
+        return true;
     }
 
 

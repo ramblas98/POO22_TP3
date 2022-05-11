@@ -52,5 +52,37 @@ public class Camion extends Vehiculo{
        g= this.getCompartimientos()+ this.getPatente();
       return g;
     }
+
+    @Override
+    public int hashCode() {
+        int hash = 7;
+        return hash;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final Camion other = (Camion) obj;
+        if (this.compartimientos != other.compartimientos) {
+            return false;
+        }
+        if (this.capacidadPeso != other.capacidadPeso) {
+            return false;
+        }
+        return true;
+    }
+
+    @Override
+    public String toString() {
+        return "Camion{" + "compartimientos=" + compartimientos + ", capacidadPeso=" + capacidadPeso + '}';
+    }
     
 }

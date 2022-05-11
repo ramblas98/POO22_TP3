@@ -20,7 +20,6 @@ public class TP3EJE_2 {
   //  Vehiculo a= new Vehiculo("hza 878","volvo");
     Camion   b= new Camion(10,160,"hfg 548","zuzuki");
     Autobus  c= new Autobus(65,150,"gtr 456","metalpar");
-    
     Camion  a= new Camion (5,20,"gtr 158","mercedes bensz");
     Camion  d=new Camion(10,160,"hfg 548","zuzuki");
     Autobus e= new Autobus(50,200,"gtr","buspark");
@@ -44,5 +43,14 @@ public class TP3EJE_2 {
           System.out.println("True");
          else
         System.out.println("False");
-        }
+
+    System.out.println( a.toString());
+    System.out.println( b.toString());
+    System.out.println( c.toString());
+    System.out.println( d.toString());
+    System.out.println( e.toString());
+    System.out.println( f.toString());
+
+            }
+
 }
